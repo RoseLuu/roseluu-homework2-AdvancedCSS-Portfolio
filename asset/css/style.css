@@ -1,0 +1,321 @@
+/*set short-cut color*/
+:root {
+    --background-orange: #ffa07a;
+    --background-dark-color: #2e2c26;
+    --text-color: #ff7f50;
+}
+/*start header style code*/
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--background-dark-color);
+    width: 100%;
+}
+header h1 {
+    display: flex;
+    padding: 20px;
+    color: var(--background-dark-color);
+    font-size: 30px;
+    text-align:right;
+}
+header h1 span{ 
+    background-color: var(--background-orange);
+    border-radius: 5px;
+    padding-left: 30px;
+    opacity: 0.9;
+}
+header nav ul li{
+    display: inline-flex; /*flex context inline for all its direct children*/
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    padding-top: 25px;
+    margin-right: 15px;
+}
+header nav ul li a {
+    color: var(--text-color);
+    font-size: 20px;
+}
+/*end of header code*/
+body {
+    background-color: #c2a995;
+}
+section h2 {
+    display: flex;
+    text-align: left;
+    font-size: 30px;
+    justify-content: flex-end;
+    padding-top: 130px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    width:100%;
+}
+section h2 span {
+    background-color: var(--background-orange);
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 80%;
+}
+.my-pic{
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/rosepic\ 2.jpg");
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+/*start work on about me part*/
+article {
+    justify-content: center;
+    display:flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+article h3 {
+    text-align: right;
+    color: var(--text-color);
+    border-right: 2px solid var(--background-orange);
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 40px;
+}
+.my-intro p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*end of work on about me part/
+/* start work on my project part*/
+.work {
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 30px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: min-content auto auto;
+    grid-gap: 10px;
+}
+.work h3 {
+    text-align: right;
+    color: var(--text-color);
+    border-right: 2px solid var(--background-orange);
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 13px;
+    display:grid;
+    grid-row: 1 / 5;
+}
+span h4 {
+    font-size:40px;
+    border-right: 30px;
+}
+p .lower-text {
+    font-size: 20px;
+    border-right: 30px;
+}
+/*work on 1st card*/
+.biggest-card {
+    background-image: url(../images/../images/Code-refactor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 1139px;
+    height: 400px;
+    opacity: 50%;
+    border: 5px solid var(--background-orange);
+    grid-column: 2 / span 2;
+    position:relative;
+}
+#placement {
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--background-orange);
+    line-height: 1.5;
+    padding-left: 8px;
+    padding-right:8px;
+    border-radius: 5%;
+}
+.biggest-card:hover {
+    opacity:100%;
+    box-shadow: 5px 10px 10px var(--background-orange);
+    transform: scale(1.1);
+}
+/*end of work on 1st card*/
+/*work for the rest of the card*/
+#card-2 {
+    background-image: url(../images/pre-work-pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--background-orange);
+    opacity:50%;
+    width: 560 px;
+    height: 200px;
+    position:relative;
+}
+#card-3 {
+    background-image: url(../images/led.jpeg);
+    border: 5px solid var(--background-orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:50%;
+    width: 560 px;
+    height: 200px;
+    position:relative;
+}
+#card-4{
+    background-image: url(../images/computer.jpeg);
+    border: 5px solid var(--background-orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:50%;
+    width: 560px;
+    height: 200px;
+    position:relative;
+}
+#card-5 {
+    background-image: url(../images/pastel.jpg);
+    border: 5px solid var(--background-orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:50%;
+    width: 560px;
+    height: 200px;
+    position:relative;
+}
+#card-6 {
+    background-image: url(../images/runbuddy.png);
+    border: 5px solid var(--background-orange);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:50%;
+    width: 560px;
+    height: 200px;
+    position:relative;
+}
+#small-explain {
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--background-orange);
+    line-height: 1.5;
+    padding-left: 8px;
+    padding-right:8px;
+    border-radius: 5%;
+}
+.card:hover {
+    opacity:100% !important; /*specipility to make sure this style will show*/
+    box-shadow: 5px 10px 10px var(--background-orange);
+    transform: scale(1.1);
+}
+/*end of work on my project part*/
+/*start footer style*/
+footer {
+    background-color: var(--background-dark-color);
+    display: inline-block;
+    padding: 30px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: min-content auto auto auto auto;
+    grid-column-gap: 10px;
+    width: 100%;
+}
+footer h3 {
+    text-align: right;
+    color: var(--text-color);
+    border-right: 2px solid var(--background-orange);
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 15px;
+    grid-row: 1 / 4;
+}
+.footer-contact{
+    grid-row: 2;
+    column-gap: 50px;
+    display: inline-flex;
+    align-content:space-between;
+}
+.footer-contact a {
+    text-decoration: none;
+    border-bottom: 5px solid var(--background-orange);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color)
+}
+.footer-contact a:hover {
+    opacity: 100%;
+    box-shadow: 5px 10px 10px var(--background-orange);
+}
+p {
+    background-image: url(../images/Desktop.png)
+}
+/*start work on media queries*/
+@media screen and (max-width:767px) {
+    header {
+        justify-content: center;
+    }
+    header h1 {
+        padding-left:0px;
+    }
+    .my-pic {
+        padding-right:30px;
+    }
+    .my-intro {
+        margin-top: 15px;/**/
+    }
+    .my-intro h3 {
+        padding-top: 0px;
+        font-size: 40px;
+        text-align:center;
+    }
+    .my-intro p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer-contact {
+        width=100%;
+        grid-template-columns: repeat (3,1fr)
+    }
+
+}
+@media  screen and (min-width: 768px) and (max-width:992px) {
+    header {
+        justify-content: center;
+    }
+    header h1 {
+        padding-left:0px;
+    }
+    .my-pic {
+        padding-right:30px;
+    }
+    .my-intro {
+        margin-top: 15px;/**/
+    }
+    .my-intro h3 {
+        padding-top: 0px;
+        font-size: 40px;
+        text-align:center;
+    }
+    .my-intro p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer-contact {
+        width=100%;
+        grid-template-columns: repeat (3,1fr)
+    }
+
+}
