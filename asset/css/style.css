@@ -34,6 +34,10 @@ header nav ul li{
     padding-top: 25px;
     margin-right: 15px;
 }
+.breadcrumb{
+    background-color: var(--background-dark-color);
+    text-decoration: none;
+}
 header nav ul li a {
     color: var(--text-color);
     font-size: 20px;
@@ -124,7 +128,7 @@ p .lower-text {
 }
 /*work on 1st card*/
 .biggest-card {
-    background-image: url(../images/../images/Code-refactor.png);
+    background-image: url(../images/../images/musicaltimemachine.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -163,7 +167,7 @@ p .lower-text {
     position:relative;
 }
 #card-3 {
-    background-image: url(../images/led.jpeg);
+    background-image: url(../images/WebAPIcodeQuiz.png);
     border: 5px solid var(--background-orange);
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,7 +178,7 @@ p .lower-text {
     position:relative;
 }
 #card-4{
-    background-image: url(../images/computer.jpeg);
+    background-image: url(../images/Weatherdashboard.png);
     border: 5px solid var(--background-orange);
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,7 +189,7 @@ p .lower-text {
     position:relative;
 }
 #card-5 {
-    background-image: url(../images/pastel.jpg);
+    background-image: url(../images/Password-generator.png);
     border: 5px solid var(--background-orange);
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,7 +200,7 @@ p .lower-text {
     position:relative;
 }
 #card-6 {
-    background-image: url(../images/runbuddy.png);
+    background-image: url(../images/work-day.png);
     border: 5px solid var(--background-orange);
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,6 +254,7 @@ footer h3 {
 }
 .footer-contact a {
     text-decoration: none;
+    grid-row: 2;
     border-bottom: 5px solid var(--background-orange);
     font-size: 20px;
     font-weight: bold;
@@ -289,7 +294,7 @@ footer h3 {
         text-align: center;
     }
     .footer-contact {
-        width=100%;
+        width: 100%;
         grid-template-columns: repeat (3,1fr)
     }
 

@@ -5,33 +5,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rose</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/reset.css" />
     <link rel="stylesheet" href="asset/css/style.css" />
 </head>
 
 <body>
-    <header>
+    <header class='col-12'>
         <h1>
             <span>Rose's Profolio</span>
         </h1>
-        <nav>
-            <ul>
-                <li>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
                     <a href="#about-me">About Me</a>
                 </li>
-                <li>
+                <li class="breadcrumb-item">
                     <a href="#my-project">My Project</a>
                 </li>
-                <li>
+                <li class="breadcrumb-item">
                     <a href="#contact">Contact Me</a>
                 </li>
-                <li>
+                <li class="breadcrumb-item">
                     <a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="my-pic">
+    <section class="my-pic col-md-12">
         <h2>
             <span>Hello! I am Rose.</span>
         </h2>
@@ -40,10 +42,9 @@
         <article id="about-me" class="my-intro">
             <h3>About Me</h3>
             <p>
-                I am a student at Georgia Tech Bootcamp and just start my journey to become a Web Developer. Even I
-                am
-                just at the entry-level of web developer, I always like to challenge myself and work on unfamiliar
-                project. I have been known for work well in both group and solo projects.
+                I am a student at Georgia Tech Bootcamp and just start my journey to become a Web Developer. Even I am
+                just at the entry-level of a web developer, I always like to challenge myself and work on the unfamiliar
+                projects. I have experience and been known for work well in both group and solo projects.
                 <br></br>
 
                 I will post all of my project in this page. Don't hesitate to reach out to me if you think I am a
@@ -54,8 +55,8 @@
             <h3>My Project</h3>
             <div id="card-1" class="biggest-card">
                 <span id="placement">
-                    <h4>Horiseon</h4>
-                    <p class=" lower-text">HTML/CSS</p>
+                    <h4>Musical Time Machine</h4>
+                    <p class=" lower-text">HTML/CSS/JavaScript/API</p>
                 </span>
             </div>
             <div id="card-2" class="card">
@@ -68,26 +69,26 @@
             </div>
             <div id='card-3' class="card">
                 <span id="small-explain">
-                    <h4>LED Wall</h4>
-                    <p class="lower-text">Node/IoT </p>
+                    <h4>Code Quiz</h4>
+                    <p class="lower-text">CSS/HTML/JavaScript </p>
                 </span>
             </div>
             <div id='card-4' class="card">
                 <span id="small-explain">
-                    <h4>Calculator</h4>
-                    <p class="lower-text">React//JavaScript/CSS</p>
+                    <h4>Weather Dashboard</h4>
+                    <p class="lower-text">API/JavaScripts</p>
                 </span>
             </div>
             <div id='card-5' class="card">
                 <span id="small-explain">
-                    <h4>Pastel Puzzels</h4>
-                    <p class="lower-text">MERN Stack</p>
+                    <h4>Password Generator</h4>
+                    <p class="lower-text">JavaScript</p>
                 </span>
             </div>
             <div id='card-6' class="card">
                 <span id="small-explain">
-                    <h4>Run Buddy</h4>
-                    <p class="lower-text">HTML/CSS</p>
+                    <h4>Day Scheduler</h4>
+                    <p class="lower-text">HTML/CSS/LocalStorage</p>
                 </span>
             </div>
         </section>
@@ -103,24 +104,33 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script>
         document.getElementById("card-1").onclick = function () {
-            location.href = "https://roseluu.github.io/roseluu-homework-1-code-refactor/"
+            location.href = "https://urbaned0ge.github.io/Musical-Time-Machine/"
         }
         document.getElementById("card-2").onclick = function () {
             location.href = "https://roseluu.github.io/prework-about-me/"
         }
         document.getElementById("card-3").onclick = function () {
-            location.href = "https://github.com/RoseLuu?tab=repositories/"
+            location.href = "https://roseluu.github.io/roseluu-homework4-WebAPIsCodeQuiz/"
         }
         document.getElementById("card-4").onclick = function () {
-            location.href = "https://github.com/RoseLuu?tab=repositories/"
+            location.href = "https://roseluu.github.io/roseluu-homework6-ServerSideAPIsWeatherDashboard/"
         }
         document.getElementById("card-5").onclick = function () {
-            location.href = "https://github.com/RoseLuu?tab=repositories/"
+            location.href = "https://roseluu.github.io/roseluu-PasswordGenerator/"
         }
         document.getElementById("card-6").onclick = function () {
-            location.href = "https://github.com/RoseLuu?tab=repositories/"
+            location.href = "https://roseluu.github.io/roseluu-homework5-ThirdPartyAPIs-WorkDayScheduler/"
         }
     </script>
 </body>
