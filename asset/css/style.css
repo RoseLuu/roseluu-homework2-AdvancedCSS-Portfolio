@@ -721,14 +721,4 @@ footer h3 {
   p .lower-text {
     font-size: 5px;
   }
-  /* .footer-contact {
-    align-content: center;
-    padding-left: 50px;
-    padding-right: 10px;
-  }
-  .footer-contact a {
-    font-size: 1.5vw;
-    border-bottom: 0.5px solid var(--background-orange);
-    font-weight: none;
-  } */
 }
